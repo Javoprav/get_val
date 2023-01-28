@@ -1,14 +1,14 @@
 import pytest
 from utils import dicts
-data = {"vcs": "mercurial"}
-data1 = {}
+'''data = {"vcs": "mercurial"}
+data1 = {}'''
 
-'''@pytest.fixture
+@pytest.fixture
 def data():
     return {"vcs": "mercurial"}
 @pytest.fixture
 def data1():
-    return {}'''
+    return {}
 
 def test_get_val():
     assert dicts.get_val(data, "vcs") == 'mercurial'
