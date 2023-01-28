@@ -1,5 +1,5 @@
 # файл dicts.py
-"""Функция для работы со словарями"""
+
 data2 = {"vcs": "mercurial"}
 data3 = {}
 def get_val(collection, key, default='git'):

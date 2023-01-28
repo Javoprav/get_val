@@ -9,6 +9,7 @@ def data():
 @pytest.fixture
 def data1():
     return {}'''
+
 def test_get_val():
     assert dicts.get_val(data, "vcs") == 'mercurial'
     assert dicts.get_val(data, "vcs", "git") == 'mercurial'
